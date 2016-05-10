@@ -54,21 +54,28 @@ section.awSlider {
 
 .demoTarget {
     position: relative;
-    top: 30px;
+    overflow: hidden;
     left: 5%;
 }
-
+.check-With-CSS{
+    position: relative;  
+    margin-top: 140px;  
+    right: 45%;
+}
 .checking {
     position: relative;
     color: cyan;
     bottom: 40px;
     left: 50%;
 }
-.success{
+
+.success {
     position: relative;
-    left: 25%;
+    left: 80%;
     color: deeppink;
+    margin-top: -13%;
 }
+
 input[type=checkbox] {
     position: absolute;
     clip: rect(0, 0, 0, 0);
@@ -78,16 +85,16 @@ label {
     cursor: pointer;
 }
 
-   .label-checkbox:after {
-        content: " ";
-        display: inline-block;
-        width: 17px;
-        height: 17px;
-        background: url(../img/checkbox-sprite.png);
-        position: relative;
-        top: 3px;
-        margin-left: 15px;
-    }
+.label-checkbox:after {
+    content: " ";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url(../img/checkbox-sprite.png);
+    position: relative;
+    top: 3px;
+    margin-left: 15px;
+}
 
 input[type=checkbox]:checked + label:after {
     background-position: 0 -17px;
@@ -103,22 +110,26 @@ input[type=checkbox]:checked + label:hover:after {
 
 
 .niceCheck {
-	width: 17px;
-	height: 17px;
-	display: inline-block;
-	cursor: pointer;
-	background: url(../img/checkbox-sprite.png);
-	overflow: hidden;
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    cursor: pointer;
+    background: url(../img/checkbox-sprite.png);
+    overflow: hidden;
 }
+
 .niceChecked {
-	background-position: 0 -17px;
+    background-position: 0 -17px;
 }
+
 .niceCheck input {
-	margin-left: -100px; /* можно задать побольше чтобы наверняка скрыть поле */
+    margin-left: -100px; /* можно задать побольше чтобы наверняка скрыть поле */
 }
+
 .niceCheckDisabled {
-	background-image: url(img/checkbox-disabled.png)
+    background-image: url(img/checkbox-disabled.png);
 }
+
 #navigation {
     padding: 0;
     list-style-type: none;
@@ -126,46 +137,237 @@ input[type=checkbox]:checked + label:hover:after {
     z-index: 1;
     float: none;
     width: 100%;
-    left: 7%;
-    margin-top: -210px;
+    left: 35%;
+    margin-top: 90px;
 }
 
-#navigation ul {
-     margin: 0;
-     padding: 0;
-}
+    #navigation ul {
+        margin: 0;
+        padding: 0;
+    }
 
-#navigation li {
-     display: inline;
-     margin: 0;
-     padding: 0;
-}
+    #navigation li {
+        display: inline;
+        margin: 0;
+        padding: 0;
+    }
 
-#navigation a {
-     color: #015287;
-     display: inline-block;
-     padding: 15px;
-     font-size: 15px;
-     text-decoration: none;
-}
+    #navigation a {
+        color: #015287;
+        display: inline-block;
+        padding: 15px;
+        font-size: 15px;
+        text-decoration: none;
+    }
 
 #blob {
-     top: 0;
-     background-color:lightsteelblue;
-     position: absolute;
-     z-index: -1;
-         margin-top: 5px;
+    top: 0;
+    background-color: lightsteelblue;
+    position: absolute;
+    z-index: -1;
+    margin-top: 5px;
     border-radius: 5px;
     margin-left: 4px;
-     box-shadow: -1px -1px rgb(100, 150, 200),
-          -2px -2px rgb(100, 140, 190), 
-         -1px -1px rgb(100, 130, 180), 
-         -1px -1px rgb(100, 120, 170), 
-         -3px -3px rgb(100, 120, 160), 
-         -6px -6px rgb(100, 120, 150), 
-         /* тень подложки */ 
-     -2px -2px 30px 3px rgb(180, 180, 180),
-          -7px -7px 6px 3px rgb(200, 200, 200);
+    box-shadow: -1px -1px rgb(100, 150, 200), -2px -2px rgb(100, 140, 190), -1px -1px rgb(100, 130, 180), -1px -1px rgb(100, 120, 170), -3px -3px rgb(100, 120, 160), -6px -6px rgb(100, 120, 150),
+    /* тень подложки */
+    -2px -2px 30px 3px rgb(180, 180, 180), -7px -7px 6px 3px rgb(200, 200, 200);
 }
 
+
+#nav {
+    background: #e5e5e5;
+    float: left;
+    margin: 0;
+    padding: 0;
+    border: 1px solid white;
+    border-bottom: none;
+    left: 240px;
+    position: relative;
+}
+
+    #nav li a, #nav li {
+        float: left;
+    }
+
+    #nav li {
+        list-style: none;
+        position: relative;
+    }
+
+        #nav li a {
+            padding: 1em 2em;
+            text-decoration: none;
+            color: white;
+            background: #292929;
+            background: -moz-linear-gradient(top, black, #3c3c3c 1px, #292929 25px);
+            background: -webkit-gradient(linear, left top, left 25, from(black), color-stop(4%, #3c3c3c), to(#292929));
+            border-right: 1px solid #3c3c3c;
+            border-left: 1px solid #292929;
+            border-bottom: 1px solid #232323;
+            border-top: 1px solid #545454;
+        }
+
+            #nav li a:hover {
+                background: #2a0d65;
+                background: -moz-linear-gradient(top, #11032e, #2a0d65);
+                background: -webkit-gradient(linear, left top, left bottom, from(#11032e), to(#2a0d65));
+            }
+
+
+/* Submenu */
+
+.hasChildren {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: black;
+    right: 0;
+    bottom: 0;
+}
+
+#nav li ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#nav li:hover > ul {
+    display: block;
+}
+
+#nav li ul li, #nav li ul li a {
+    float: none;
+}
+
+#nav li ul li {
+    _display: inline; /* for IE6 */
+}
+
+    #nav li ul li a {
+        width: 150px;
+        display: block;
+    }
+
+    /* SUBSUB Menu */
+
+    #nav li ul li ul {
+        display: none;
+    }
+
+    #nav li ul li:hover ul {
+        left: 100%;
+        top: 0;
+    }
+.example {
+    position:relative;
+    background:#fff url(../img/background.jpg);
+    width:520px;
+    height:382px;
+    border:1px #000 solid;
+    margin:20px auto;
+    padding:15px;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+}
+
+/* main menu styles */
+
+.nav,.nav ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.nav {
+    position:relative;
+}
+
+.nav ul {
+    height:0;
+    left:0;
+    overflow:hidden;
+    position:absolute;
+    top:46px;
+}
+
+.nav li {
+    float:left;
+    position:relative;
+}
+
+.nav li a {
+    -moz-transition:0.5s;
+    -o-transition:0.5s;
+    -webkit-transition:0.5s;
+    background-color:#7770B4;
+    border:1px solid #6E67A6;
+    color:#FFF;
+    display:block;
+    font-size:16px;
+    line-height:35px;
+    padding:5px 20px;
+    text-decoration:none;
+    transition:0.5s;
+}
+
+.nav li:hover > a {
+    background:#8CCA33;
+    border-color:#6E67A6;
+    color:#fff;
+}
+
+.nav li:hover ul.subs {
+    height:auto;
+    width:180px;
+}
+
+.nav ul li {
+    -moz-transition:0.5s;
+    -o-transition:0.5s;
+    -webkit-transition:0.5s;
+    opacity:0;
+    transition:0.5s;
+    width:100%;
+}
+
+.nav li ul li {
+    -moz-transition-delay:0s;
+    -o-transition-delay:0s;
+    -webkit-transition-delay:0s;
+    transition-delay:0s;
+}
+
+.nav li:hover ul li {
+    opacity:1;
+    -moz-transition-delay:0.5s;
+    -o-transition-delay:0.5s;
+    -webkit-transition-delay:0.5s;
+    transition-delay:0.5s;
+}
+
+.nav ul li a {
+    background:#7770B4;
+    border-color:#6E67A6;
+    color:#fff;
+    line-height:1px;
+    -moz-transition:1.5s;
+    -o-transition:1.5s;
+    -webkit-transition:1.5s;
+    transition:1.5s;
+}
+
+.nav li:hover ul li a {
+    line-height:35px;
+}
+
+.nav ul li a:hover {
+    background:#8CCA33;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0)));
+    background-image: -moz-linear-gradient(-90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    background-image: -o-linear-gradient(-90deg,rgba(255,255,255,0.5),rgba(255,255,25,0));
+}
 

@@ -12,6 +12,8 @@
 
 </head>
 <body>
+    
+
     <div class="demoTarget">
         <select id="default-usage-select">
             <option value="--">Please select your favorite color</option>
@@ -72,22 +74,59 @@
 
         </section>
     </div>
-
-    <div class="checking">
-        Checkbox with CSS
-        <br />
-        <input type="checkbox" id="test-check1" />
-        <label  class="label-checkbox"for="test-check1">Чекбокс 1:</label>
+    <div>
+        <ul id="nav">
+            <li><a href="#">Home</a></li>
+            <li>
+                <a href="#">About</a>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">About Them</a></li>
+                    <li>
+                        <a href="#">About You</a>
+                        <ul>
+                            <li><a href="#">More About Us</a></li>
+                            <li><a href="#">More About Them</a></li>
+                            <li><a href="#">More About You</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Portfolio</a></li>
+            <li>
+                <a href="#">Contact</a>
+                <ul>
+                    <li><a href="#">International</a></li>
+                    <li>
+                        <a href="#">Corporate</a>
+                        <ul>
+                            <li><a href="#">International</a></li>
+                            <li><a href="#">Corporate</a></li>
+                            <li><a href="#">American Offices</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">American Offices</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Mission Statement</a></li>
+        </ul>
     </div>
-    <div class="checking">
-        <input type="checkbox" id="test-check2" />
-        <label class="label-checkbox" for="test-check2">Чекбокс 2:</label>
+    <div class="check-With-CSS">
+        <div class="checking">
+            Checkbox with CSS
+            <br />
+            <input type="checkbox" id="test-check1" />
+            <label class="label-checkbox" for="test-check1">Чекбокс 1:</label>
+        </div>
+        <div class="checking">
+            <input type="checkbox" id="test-check2" />
+            <label class="label-checkbox" for="test-check2">Чекбокс 2:</label>
+        </div>
+        <div class="checking">
+            <input type="checkbox" id="test-check3" />
+            <label class="label-checkbox" for="test-check3">Чекбокс 3:</label>
+        </div>
     </div>
-    <div class="checking">
-        <input type="checkbox" id="test-check3" />
-        <label class="label-checkbox" for="test-check3">Чекбокс 3:</label>
-    </div>
-    
     <div class="success">
         Checkbox with jquery
         <div>
@@ -110,8 +149,39 @@
         <li><a href="#">Shop</a></li>
         <li><a href="#">Contacts</a></li>
    </ul>
-
-        
+   <div>
+       <div class="example">
+           <ul class="nav">
+               <li><a href="http://www.script-tutorials.com/">Home</a></li>
+               <li>
+                   <a href="http://www.script-tutorials.com/">Tutorials</a>
+                   <ul class="subs">
+                       <li><a href="http://www.script-tutorials.com/category/html-css/">HTML / CSS</a></li>
+                       <li><a href="http://www.script-tutorials.com/category/jquery/">JS / jQuery</a></li>
+                       <li><a href="http://www.script-tutorials.com/category/php/">PHP</a></li>
+                       <li><a href="http://www.script-tutorials.com/category/mysql/">MySQL</a></li>
+                       <li><a href="http://www.script-tutorials.com/category/xslt/">XSLT</a></li>
+                       <li><a href="http://www.script-tutorials.com/category/ajax/">Ajax</a></li>
+                       <li><a href="http://www.script-tutorials.com/category/html-css/">HTML / CSS</a></li>
+                   </ul>
+               </li>
+               <li>
+                   <a href="http://www.script-tutorials.com/category/resources/">Resources</a>
+                   <ul class="subs">
+                       <li><a href="http://www.script-tutorials.com/category/php/">PHP</a></li>
+                       <li><a href="http://www.script-tutorials.com/category/mysql/">MySQL</a></li>
+                       <li><a href="http://www.script-tutorials.com/category/xslt/">XSLT</a></li>
+                       <li><a href="http://www.script-tutorials.com/category/ajax/">Ajax</a></li>
+                       <li><a href="http://www.script-tutorials.com/category/html-css/">HTML / CSS</a></li>
+                   </ul>
+               </li>
+               <li><a href="http://www.script-tutorials.com/about/">About</a></li>
+               <li><a href="http://www.script-tutorials.com/creating-css3-dropdown-menu-4/">Back</a></li>
+           </ul>
+           <div style="clear:both"></div>
+       </div>
+</div> 
+           
     <script src="../Scripts/jquery-2.2.3.js"></script>
         <script src="../Scripts/bootstrap.js"></script>
         <script src="../Scripts/jquery.selectbox-0.6.1.js"></script>
