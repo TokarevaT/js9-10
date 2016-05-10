@@ -3,14 +3,15 @@
 <head>
     <title></title>
     <link href="../css/jquery.selectbox.css" rel="stylesheet" />
-    <link href="../css/StyleSheet1.css" rel="stylesheet" />
-
     <link href="../Content/bootstrap.css" rel="stylesheet" />
     <link href="../Content/bootstrap-theme.css" rel="stylesheet" />
     <link href="../Content/bootstrap.min.css" rel="stylesheet" />
 
+    <link href="../css/StyleSheet1.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+
 </head>
-<body style="background-color: black">
+<body>
     <div class="demoTarget">
         <select id="default-usage-select">
             <option value="--">Please select your favorite color</option>
@@ -25,6 +26,8 @@
         </select>
         <div class="clr"></div>
     </div>
+
+
     <div>
         <section class="awSlider">
             <div class="carousel slide" data-ride="carousel">
@@ -40,19 +43,19 @@
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
                         <img src="http://www.adobewordpress.com/wp-content/uploads/2014/02/wallpaper-thumb-941.jpg">
-                        <div class="carousel-caption">Görsel #1</div>
+                        <div class="carousel-caption">Picture №1</div>
                     </div>
                     <div class="item">
                         <img src="http://www.adobewordpress.com/wp-content/uploads/2014/02/wallpaper-thumb-101.jpg">
-                        <div class="carousel-caption">Görsel #2</div>
+                        <div class="carousel-caption">Picture №2</div>
                     </div>
                     <div class="item">
                         <img src="http://www.adobewordpress.com/wp-content/uploads/2014/02/wallpaper-thumb-1051.jpg">
-                        <div class="carousel-caption">Görsel #3</div>
+                        <div class="carousel-caption">Picture №3</div>
                     </div>
                     <div class="item">
                         <img src="http://www.adobewordpress.com/wp-content/uploads/2013/07/wallpaper-thumb-74.jpg">
-                        <div class="carousel-caption">Görsel #4</div>
+                        <div class="carousel-caption">Picture №4</div>
                     </div>
                 </div>
 
@@ -70,18 +73,50 @@
         </section>
     </div>
 
-  
-
-
-    <script src="../Scripts/jquery-2.2.3.js"></script>
-    <script src="../Scripts/jquery-2.2.3.min.js"></script>
-
-        <script src="../Scripts/bootstrap.min.js"></script>
-        <script src="../Scripts/bootstrap.js"></script>
-
+    <div class="checking">
+        Checkbox with CSS
+        <br />
+        <input type="checkbox" id="test-check1" />
+        <label  class="label-checkbox"for="test-check1">Чекбокс 1:</label>
+    </div>
+    <div class="checking">
+        <input type="checkbox" id="test-check2" />
+        <label class="label-checkbox" for="test-check2">Чекбокс 2:</label>
+    </div>
+    <div class="checking">
+        <input type="checkbox" id="test-check3" />
+        <label class="label-checkbox" for="test-check3">Чекбокс 3:</label>
+    </div>
     
-        <script src="../js/JavaScript1.js"></script>
-    <script src="../Scripts/jquery.selectbox-0.6.1.js"></script>
+    <div class="success">
+        Checkbox with jquery
+        <div>
+            <label for="ch1">label 1</label>
+            <input type="checkbox" class="niceCheck" id="ch1" tabindex="1" />
+        </div>
+        <div>
+            <label for="ch2">label 2</label>
+            <input type="checkbox" class="niceCheck" checked="checked" id="ch2" tabindex="2" value="2" />
+        </div>
+        <div>
+            <label for="ch3">label 3</label>
+            <input type="checkbox" class="niceCheck" id="ch3" checked="checked" />
+        </div>
+    </div>
 
+    <ul id="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Contacts</a></li>
+   </ul>
+
+        
+    <script src="../Scripts/jquery-2.2.3.js"></script>
+        <script src="../Scripts/bootstrap.js"></script>
+        <script src="../Scripts/jquery.selectbox-0.6.1.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+        <script src="../js/JavaScript1.js"></script>
 </body>
 </html>

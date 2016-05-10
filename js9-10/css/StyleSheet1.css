@@ -2,54 +2,170 @@
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
-    color: #333;
     background-color: black;
 }
 
-section.awSlider .carousel{
-  display:table;
-  z-index:2;
-  -moz-box-shadow: 0 0 4px #444;
-	-webkit-box-shadow: 0 0 4px #444;
-	box-shadow: 0 0 15px rgba(1,1,1,.5);
+section.awSlider .carousel {
+    display: table;
+    z-index: 2;
+    -moz-box-shadow: 0 0 4px #444;
+    -webkit-box-shadow: 0 0 4px #444;
+    box-shadow: 0 0 15px rgba(1,1,1,.5);
 }
 
-section.awSlider{
-  margin:30px auto;
-  padding:30px;
-  position:relative;
-  display:table;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+section.awSlider {
+    margin: 30px auto;
+    padding: 30px;
+    position: relative;
+    display: table;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-section.awSlider:hover > img{
-  -ms-transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-  opacity:1;
+    section.awSlider:hover > img {
+        -ms-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        opacity: 1;
+    }
+
+    section.awSlider img {
+        pointer-events: none;
+    }
+
+    section.awSlider > img {
+        position: absolute;
+        top: 30px;
+        z-index: 1;
+        transition: all .3s;
+        filter: blur(1.8vw);
+        -webkit-filter: blur(2vw);
+        -moz-filter: blur(2vw);
+        -o-filter: blur(2vw);
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        opacity: .5;
+    }
+
+.demoTarget {
+    position: relative;
+    top: 30px;
+    left: 5%;
 }
 
-section.awSlider img{
-   pointer-events: none;
+.checking {
+    position: relative;
+    color: cyan;
+    bottom: 40px;
+    left: 50%;
+}
+.success{
+    position: relative;
+    left: 25%;
+    color: deeppink;
+}
+input[type=checkbox] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
 }
 
-section.awSlider > img{
-  position:absolute;
-  top:30px;
-  z-index:1;
-  transition:all .3s;
-  filter: blur(1.8vw);
-  -webkit-filter: blur(2vw);
-  -moz-filter: blur(2vw); 
-  -o-filter: blur(2vw); 
-  -ms-filter: blur(2vw);
-  -ms-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-  opacity:.5;
+label {
+    cursor: pointer;
 }
+
+   .label-checkbox:after {
+        content: " ";
+        display: inline-block;
+        width: 17px;
+        height: 17px;
+        background: url(../img/checkbox-sprite.png);
+        position: relative;
+        top: 3px;
+        margin-left: 15px;
+    }
+
+input[type=checkbox]:checked + label:after {
+    background-position: 0 -17px;
+}
+
+label:hover:after {
+    background-position: 0 -34px;
+}
+
+input[type=checkbox]:checked + label:hover:after {
+    background-position: 0 -51px;
+}
+
+
+.niceCheck {
+	width: 17px;
+	height: 17px;
+	display: inline-block;
+	cursor: pointer;
+	background: url(../img/checkbox-sprite.png);
+	overflow: hidden;
+}
+.niceChecked {
+	background-position: 0 -17px;
+}
+.niceCheck input {
+	margin-left: -100px; /* можно задать побольше чтобы наверняка скрыть поле */
+}
+.niceCheckDisabled {
+	background-image: url(img/checkbox-disabled.png)
+}
+#navigation {
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+    z-index: 1;
+    float: none;
+    width: 100%;
+    left: 7%;
+    margin-top: -210px;
+}
+
+#navigation ul {
+     margin: 0;
+     padding: 0;
+}
+
+#navigation li {
+     display: inline;
+     margin: 0;
+     padding: 0;
+}
+
+#navigation a {
+     color: #015287;
+     display: inline-block;
+     padding: 15px;
+     font-size: 15px;
+     text-decoration: none;
+}
+
+#blob {
+     top: 0;
+     background-color:lightsteelblue;
+     position: absolute;
+     z-index: -1;
+         margin-top: 5px;
+    border-radius: 5px;
+    margin-left: 4px;
+     box-shadow: -1px -1px rgb(100, 150, 200),
+          -2px -2px rgb(100, 140, 190), 
+         -1px -1px rgb(100, 130, 180), 
+         -1px -1px rgb(100, 120, 170), 
+         -3px -3px rgb(100, 120, 160), 
+         -6px -6px rgb(100, 120, 150), 
+         /* тень подложки */ 
+     -2px -2px 30px 3px rgb(180, 180, 180),
+          -7px -7px 6px 3px rgb(200, 200, 200);
+}
+
+
